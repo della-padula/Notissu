@@ -31,6 +31,8 @@
 		DE501C472374FC9D0053055A /* NoticeInmun.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE501C462374FC9D0053055A /* NoticeInmun.swift */; };
 		DE501C492374FD250053055A /* NoticeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE501C482374FD250053055A /* NoticeURL.swift */; };
 		DE501C4B23750DCB0053055A /* notissu_anim.json in Resources */ = {isa = PBXBuildFile; fileRef = DE501C4A23750DCA0053055A /* notissu_anim.json */; };
+		DE53D11523F93D5300AEFCE2 /* UnivNoticer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE53D11223F93D4400AEFCE2 /* UnivNoticer.framework */; };
+		DE53D11623F93D5300AEFCE2 /* UnivNoticer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE53D11223F93D4400AEFCE2 /* UnivNoticer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DE5542402377CC31004E01EB /* NoticeNaturalScience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE55423F2377CC31004E01EB /* NoticeNaturalScience.swift */; };
 		DE5542422377D993004E01EB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5542412377D993004E01EB /* StartViewController.swift */; };
 		DE5542442377E076004E01EB /* HomeSwticher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5542432377E076004E01EB /* HomeSwticher.swift */; };
@@ -86,6 +88,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DE53D11123F93D4400AEFCE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE53D10C23F93D4400AEFCE2 /* UnivNoticer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE53D0C123F9395400AEFCE2;
+			remoteInfo = UnivNoticer;
+		};
+		DE53D11323F93D4400AEFCE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE53D10C23F93D4400AEFCE2 /* UnivNoticer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DE53D0CA23F9395400AEFCE2;
+			remoteInfo = UnivNoticerTests;
+		};
 		DE64BE8D23DD253C00DF46C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DE29612A23703F4C0074F24B /* Project object */;
@@ -96,6 +112,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DE53D11723F93D5300AEFCE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DE53D11623F93D5300AEFCE2 /* UnivNoticer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE64BE9023DD253C00DF46C5 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +168,7 @@
 		DE501C462374FC9D0053055A /* NoticeInmun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeInmun.swift; sourceTree = "<group>"; };
 		DE501C482374FD250053055A /* NoticeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeURL.swift; sourceTree = "<group>"; };
 		DE501C4A23750DCA0053055A /* notissu_anim.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notissu_anim.json; sourceTree = SOURCE_ROOT; };
+		DE53D10C23F93D4400AEFCE2 /* UnivNoticer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UnivNoticer.xcodeproj; path = ../UnivNoticer/UnivNoticer.xcodeproj; sourceTree = "<group>"; };
 		DE55423F2377CC31004E01EB /* NoticeNaturalScience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeNaturalScience.swift; sourceTree = "<group>"; };
 		DE5542412377D993004E01EB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		DE5542432377E076004E01EB /* HomeSwticher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwticher.swift; sourceTree = "<group>"; };
@@ -188,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBB715123744AC800C38812 /* WebKit.framework in Frameworks */,
+				DE53D11523F93D5300AEFCE2 /* UnivNoticer.framework in Frameworks */,
 				DEBB714E23744AC700C38812 /* Pods_SoongsilNotice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +287,7 @@
 		DE29612923703F4C0074F24B = {
 			isa = PBXGroup;
 			children = (
+				DE53D10C23F93D4400AEFCE2 /* UnivNoticer.xcodeproj */,
 				DE29613423703F4C0074F24B /* SoongsilNotice */,
 				DE64BE8623DD253C00DF46C5 /* Notissu Today Extension */,
 				DE29613323703F4C0074F24B /* Products */,
@@ -322,6 +352,15 @@
 				DE0F8F1723739C8A006A0B49 /* NoticeAttachmentCell.swift */,
 			);
 			path = NoticeDetail;
+			sourceTree = "<group>";
+		};
+		DE53D10D23F93D4400AEFCE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE53D11223F93D4400AEFCE2 /* UnivNoticer.framework */,
+				DE53D11423F93D4400AEFCE2 /* UnivNoticerTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		DE554249237933FA004E01EB /* More */ = {
@@ -397,6 +436,7 @@
 				DE29613023703F4C0074F24B /* Resources */,
 				863FA639D8CB8D787EBADFD5 /* [CP] Embed Pods Frameworks */,
 				DE64BE9023DD253C00DF46C5 /* Embed App Extensions */,
+				DE53D11723F93D5300AEFCE2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,6 +495,12 @@
 			mainGroup = DE29612923703F4C0074F24B;
 			productRefGroup = DE29613323703F4C0074F24B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DE53D10D23F93D4400AEFCE2 /* Products */;
+					ProjectRef = DE53D10C23F93D4400AEFCE2 /* UnivNoticer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DE29613123703F4C0074F24B /* SoongsilNotice */,
@@ -462,6 +508,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DE53D11223F93D4400AEFCE2 /* UnivNoticer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnivNoticer.framework;
+			remoteRef = DE53D11123F93D4400AEFCE2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DE53D11423F93D4400AEFCE2 /* UnivNoticerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnivNoticerTests.xctest;
+			remoteRef = DE53D11323F93D4400AEFCE2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DE29613023703F4C0074F24B /* Resources */ = {
