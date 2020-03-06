@@ -204,8 +204,6 @@ class NoticeListViewController: BaseViewController, NoticeListView, UITableViewD
         self.presenter?.loadNoticeList(page: page, keyword: searchKeyword, deptCode: noticeDeptCode!)
     }
     
-    
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = self.storyboard!
         let noticeDetailController = storyBoard.instantiateViewController(withIdentifier: "noticeDetailVC") as? NoticeDetailViewController
