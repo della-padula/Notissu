@@ -27,9 +27,9 @@ class SearchViewController: BaseViewController, SearchViewProtocol, UIPickerView
         self.presenter = SearchPresenter(view: self)
         
         self.keywordTextField.layer.borderWidth = 0.5
-        self.keywordTextField.layer.borderColor = NotiSSU_ColorSet.notissuGrayLight.cgColor
+        self.keywordTextField.layer.borderColor = UIColor.SUB200.cgColor
         
-        self.lblSelectedMajor.textColor = NotiSSU_ColorSet.notissuGray
+        self.lblSelectedMajor.textColor = UIColor.MONO300
     }
     
     override func viewWillAppear(_ animated: Bool) {

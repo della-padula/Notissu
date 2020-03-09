@@ -20,6 +20,8 @@
 		DE0F8F1F2373F44C006A0B49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0F8F1E2373F44C006A0B49 /* HomeViewController.swift */; };
 		DE0F8F212373FDD7006A0B49 /* NoticeEngineering.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0F8F202373FDD7006A0B49 /* NoticeEngineering.swift */; };
 		DE0F8F2323740041006A0B49 /* NoticeLaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0F8F2223740041006A0B49 /* NoticeLaw.swift */; };
+		DE0FB7642415C7C90046FCA2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB7632415C7C90046FCA2 /* UIColor+Extension.swift */; };
+		DE0FB7652415C7C90046FCA2 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB7632415C7C90046FCA2 /* UIColor+Extension.swift */; };
 		DE1772D3240F64F400A58A66 /* Encode+EUC-KR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1772D2240F64F400A58A66 /* Encode+EUC-KR.swift */; };
 		DE1772D4240F64F400A58A66 /* Encode+EUC-KR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1772D2240F64F400A58A66 /* Encode+EUC-KR.swift */; };
 		DE29613623703F4C0074F24B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29613523703F4C0074F24B /* AppDelegate.swift */; };
@@ -164,6 +166,7 @@
 		DE0F8F1E2373F44C006A0B49 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DE0F8F202373FDD7006A0B49 /* NoticeEngineering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeEngineering.swift; sourceTree = "<group>"; };
 		DE0F8F2223740041006A0B49 /* NoticeLaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeLaw.swift; sourceTree = "<group>"; };
+		DE0FB7632415C7C90046FCA2 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		DE1772D2240F64F400A58A66 /* Encode+EUC-KR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encode+EUC-KR.swift"; sourceTree = "<group>"; };
 		DE29613223703F4C0074F24B /* Notissu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notissu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE29613523703F4C0074F24B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -363,6 +366,7 @@
 				B0B67AEA2400BB060027D038 /* MajorModel.swift */,
 				DE7E5DB024093555007F0DF2 /* String+FileType.swift */,
 				DE1772D2240F64F400A58A66 /* Encode+EUC-KR.swift */,
+				DE0FB7632415C7C90046FCA2 /* UIColor+Extension.swift */,
 			);
 			path = SoongsilNotice;
 			sourceTree = "<group>";
@@ -666,6 +670,7 @@
 				DE53D14B23FC21D300AEFCE2 /* BookmarkViewController.swift in Sources */,
 				DE8C73862379BDF6008F2FE1 /* NoticeSocial.swift in Sources */,
 				DE53D14F23FC21E400AEFCE2 /* BookmarkPresenter.swift in Sources */,
+				DE0FB7642415C7C90046FCA2 /* UIColor+Extension.swift in Sources */,
 				DEBFDC43237E31A3003888D9 /* MoreTableCell.swift in Sources */,
 				DE29613623703F4C0074F24B /* AppDelegate.swift in Sources */,
 				DE7496B523DC00D400000849 /* SearchModel.swift in Sources */,
@@ -738,6 +743,7 @@
 				DE85B93923DD29FC001FB35C /* ConfigSetting.swift in Sources */,
 				DE53D0B123F8E9B100AEFCE2 /* FavoriteNotice.xcdatamodeld in Sources */,
 				DE85B92E23DD29CE001FB35C /* NoticeIT.swift in Sources */,
+				DE0FB7652415C7C90046FCA2 /* UIColor+Extension.swift in Sources */,
 				DE04186124021BCA00486BF3 /* NotissuResource.swift in Sources */,
 				DEBE386B23EFEFC2006F51AB /* WidgetNoticeView.swift in Sources */,
 				DE1772D4240F64F400A58A66 /* Encode+EUC-KR.swift in Sources */,
