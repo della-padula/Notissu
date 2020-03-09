@@ -26,6 +26,22 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
     
     @IBOutlet var scrollViewWidth: NSLayoutConstraint!
     
+    @IBAction func onClickSelectDept(_ sender: Any) {
+        let storyBoard = self.storyboard!
+        let selectHomeDeptViewController = storyBoard.instantiateViewController(withIdentifier: "selectHomeDeptVC")
+        
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+       
+        view.window!.layer.add(transition, forKey: kCATransition)
+        
+        selectHomeDeptViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(selectHomeDeptViewController, animated: false, completion: nil)
+    }
+    
     private var presenter: MyNoticePresenterProtocol!
     
     override func viewDidLoad() {
@@ -54,9 +70,6 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
     }
     
     private func setGradientNavigationBar() {
-        print("navigationController : \(self.navigationController)")
-        print("navigationBar : \(self.navigationController?.navigationBar)")
-        print("navigationItem : \(self.navigationController?.navigationItem)")
         
         if let navigationBar = self.navigationController?.navigationBar {
             let gradient = CAGradientLayer()

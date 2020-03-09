@@ -16,6 +16,12 @@ extension UIFont {
         }
     }
     
+    open class var SFProTextRegular11P: UIFont {
+        get {
+            return UIFont(name: "SFProText-Regular", size: 11.0)!
+        }
+    }
+    
     open class var AppleSDSemiBold17P: UIFont {
         get {
             return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 17.0)!

@@ -15,18 +15,31 @@ struct Major {
 }
 
 class HomeCell: UITableViewCell {
-    @IBOutlet var majorTitle: UILabel!
-    @IBOutlet var majorTitleEng: UILabel!
+    @IBOutlet weak var majorTitle: UILabel!
+    @IBOutlet weak var majorTitleEng: UILabel!
+    @IBOutlet weak var itemBgView: UIView!
+    @IBOutlet weak var majorImageView: UIImageView!
+    
     private var majorCode: DeptCode?
     private var majorName: DeptName?
     
     var major: Major = Major() {
         didSet {
-            majorTitle.text = major.majorName.map { $0.rawValue }
-            majorTitleEng.text = major.majorNameEng.map { $0.rawValue }
+            self.majorTitle.text = major.majorName.map { $0.rawValue }
+            self.majorTitleEng.text = major.majorNameEng.map { $0.rawValue }
             
             majorCode = major.majorCode
             majorName = major.majorName
+            
+            self.majorTitle.font    = .AppleSDSemiBold17P
+            self.majorTitle.textColor = .MONO500
+            self.majorTitleEng.font = .SFProTextRegular11P
+            self.majorTitleEng.textColor = .MONO500
+            
+            self.itemBgView.clipsToBounds      = true
+            self.itemBgView.layer.cornerRadius = 8
+            self.itemBgView.backgroundColor    = .SUB100
+            self.majorImageView.tintColor      = .MONO500
         }
     }
 }

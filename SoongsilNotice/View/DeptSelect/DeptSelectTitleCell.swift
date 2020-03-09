@@ -23,6 +23,7 @@ class DeptSelectTitleCell: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
+            print("isSelected : \(isSelected)")
 //            self.isOpaque = true
             self.lblSectionTitle.alpha = isSelected ? 1.0 : 0.3
             

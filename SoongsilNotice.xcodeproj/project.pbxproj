@@ -70,6 +70,11 @@
 		DE5E82E42415E09C00E7202B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82E32415E09C00E7202B /* UIView+Extension.swift */; };
 		DE5E82E52415E09D00E7202B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82E32415E09C00E7202B /* UIView+Extension.swift */; };
 		DE5E82E82415E77A00E7202B /* DeptSelectTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82E72415E77A00E7202B /* DeptSelectTitleCell.swift */; };
+		DE5E82EC2415FFB300E7202B /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE5E82EB2415FFB200E7202B /* SFProText-Regular.ttf */; };
+		DE5E82ED2415FFB300E7202B /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE5E82EB2415FFB200E7202B /* SFProText-Regular.ttf */; };
+		DE5E82F1241610BF00E7202B /* CATransition+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82F0241610BF00E7202B /* CATransition+Extension.swift */; };
+		DE5E82F42416124600E7202B /* MyNoticeEditDeptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82F32416124600E7202B /* MyNoticeEditDeptViewController.swift */; };
+		DE5E82F72416191B00E7202B /* MyNoticeDeptSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82F62416191B00E7202B /* MyNoticeDeptSelectCell.swift */; };
 		DE64BE8523DD253C00DF46C5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE64BE8423DD253C00DF46C5 /* NotificationCenter.framework */; };
 		DE64BE8823DD253C00DF46C5 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BE8723DD253C00DF46C5 /* TodayViewController.swift */; };
 		DE64BE8B23DD253C00DF46C5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE64BE8923DD253C00DF46C5 /* MainInterface.storyboard */; };
@@ -222,6 +227,10 @@
 		DE5E82E02415DF5D00E7202B /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
 		DE5E82E32415E09C00E7202B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		DE5E82E72415E77A00E7202B /* DeptSelectTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptSelectTitleCell.swift; sourceTree = "<group>"; };
+		DE5E82EB2415FFB200E7202B /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		DE5E82F0241610BF00E7202B /* CATransition+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransition+Extension.swift"; sourceTree = "<group>"; };
+		DE5E82F32416124600E7202B /* MyNoticeEditDeptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNoticeEditDeptViewController.swift; sourceTree = "<group>"; };
+		DE5E82F62416191B00E7202B /* MyNoticeDeptSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNoticeDeptSelectCell.swift; sourceTree = "<group>"; };
 		DE64BE8323DD253C00DF46C5 /* Notissu Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notissu Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE64BE8423DD253C00DF46C5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		DE64BE8723DD253C00DF46C5 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -421,6 +430,7 @@
 				DE0FB76A2415CF0C0046FCA2 /* UIFont+Extension.swift */,
 				DE0FB76D2415D2E30046FCA2 /* RoundButton.swift */,
 				DE5E82E32415E09C00E7202B /* UIView+Extension.swift */,
+				DE5E82F0241610BF00E7202B /* CATransition+Extension.swift */,
 			);
 			path = SoongsilNotice;
 			sourceTree = "<group>";
@@ -486,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5E82E02415DF5D00E7202B /* SFProText-Bold.ttf */,
+				DE5E82EB2415FFB200E7202B /* SFProText-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -494,6 +505,8 @@
 			isa = PBXGroup;
 			children = (
 				DE5E82E72415E77A00E7202B /* DeptSelectTitleCell.swift */,
+				DE5E82F32416124600E7202B /* MyNoticeEditDeptViewController.swift */,
+				DE5E82F62416191B00E7202B /* MyNoticeDeptSelectCell.swift */,
 			);
 			path = DeptSelect;
 			sourceTree = "<group>";
@@ -651,6 +664,7 @@
 				DE0418B12402412F00486BF3 /* GoogleService-Info.plist in Resources */,
 				DE29613D23703F4C0074F24B /* Main.storyboard in Resources */,
 				DEF56D8F2384DB1C003CA0F0 /* manual3.png in Resources */,
+				DE5E82EC2415FFB300E7202B /* SFProText-Regular.ttf in Resources */,
 				DE5E82E12415DF5D00E7202B /* SFProText-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +680,7 @@
 				DE7E5DB42409377D007F0DF2 /* FileTypeIcon.xcassets in Resources */,
 				DE64BE8B23DD253C00DF46C5 /* MainInterface.storyboard in Resources */,
 				DE5E82E22415DF5D00E7202B /* SFProText-Bold.ttf in Resources */,
+				DE5E82ED2415FFB300E7202B /* SFProText-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,6 +764,7 @@
 				DE29613623703F4C0074F24B /* AppDelegate.swift in Sources */,
 				DE0FB7712415DCEC0046FCA2 /* MyNoticeViewController.swift in Sources */,
 				DE7496B523DC00D400000849 /* SearchModel.swift in Sources */,
+				DE5E82F42416124600E7202B /* MyNoticeEditDeptViewController.swift in Sources */,
 				DE29615B237289D60074F24B /* NoticeDetailContract.swift in Sources */,
 				DE75F91424064F2E00510E78 /* VersionInfoView.swift in Sources */,
 				DE501C492374FD250053055A /* NoticeURL.swift in Sources */,
@@ -756,10 +772,12 @@
 				DE5542442377E076004E01EB /* HomeSwticher.swift in Sources */,
 				DE53D14D23FC21DB00AEFCE2 /* BookmarkContract.swift in Sources */,
 				DE7E5DB124093555007F0DF2 /* String+FileType.swift in Sources */,
+				DE5E82F72416191B00E7202B /* MyNoticeDeptSelectCell.swift in Sources */,
 				DE0FB76B2415CF0C0046FCA2 /* UIFont+Extension.swift in Sources */,
 				DE296155237195CD0074F24B /* ConfigSetting.swift in Sources */,
 				DE0FB7772415DD730046FCA2 /* MyNoticePresenter.swift in Sources */,
 				DE1772D3240F64F400A58A66 /* Encode+EUC-KR.swift in Sources */,
+				DE5E82F1241610BF00E7202B /* CATransition+Extension.swift in Sources */,
 				DE04186024021BCA00486BF3 /* NotissuResource.swift in Sources */,
 				DE55424623784879004E01EB /* SplashViewController.swift in Sources */,
 				DE29614F2370FCD20074F24B /* NoticeListContract.swift in Sources */,
