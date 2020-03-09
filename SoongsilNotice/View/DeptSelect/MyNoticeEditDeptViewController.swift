@@ -52,6 +52,7 @@ class MyNoticeEditDeptViewController: BaseViewController {
         let delayInSeconds = 0.1
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayInSeconds) {
             self.majorSectionCollectionView.selectItem(at: IndexPath.init(row: 0, section: 0), animated: false, scrollPosition: .left)
+            self.majorCollectionView.reloadData()
         }
     }
 }
@@ -98,15 +99,7 @@ extension MyNoticeEditDeptViewController: UICollectionViewDelegate, UICollection
         } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "myNoticeDeptSelectCell", for: indexPath) as! MyNoticeDeptSelectCell
             
-            print("[a] frame width : \(collectionView.frame.width)")
-            
-            print("[a] bounds width : \(collectionView.bounds.width)")
-            
-            print("[a] cell width : \(collectionView.frame.width / 3)")
-            
-            print("[a] content size : \(collectionView.contentSize)")
-            
-            cell.width = collectionView.frame.width / 3 - 10
+            cell.width = collectionView.frame.width / 3 - 8
             
                 if selectedIndex == 0 {
                     cell.major = MajorModel.majorListIT[indexPath.row]

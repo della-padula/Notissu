@@ -22,6 +22,18 @@ extension UIFont {
         }
     }
     
+    open class var AppleSDSemiBold12P: UIFont {
+        get {
+            return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 12.0)!
+        }
+    }
+    
+    open class var AppleSDSemiBold15P: UIFont {
+        get {
+            return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 15.0)!
+        }
+    }
+    
     open class var AppleSDSemiBold17P: UIFont {
         get {
             return UIFont(name: "AppleSDGothicNeo-SemiBold", size: 17.0)!

@@ -1731,7 +1731,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jbw-9X-fOb" secondAttribute="height" multiplier="1:1" id="U2h-rM-tTB"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="16O-1N-IGT">
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="16O-1N-IGT">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1749,7 +1749,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="7QI-Us-2Cm">
-                                                            <rect key="frame" x="18" y="31.5" width="114" height="87"/>
+                                                            <rect key="frame" x="18" y="31.5" width="114" height="87.5"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-F2-QIN">
                                                                     <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
@@ -1769,7 +1769,7 @@
                                                                         <constraint firstItem="eVS-AY-4Uh" firstAttribute="top" secondItem="nFd-F2-QIN" secondAttribute="top" id="zCD-tA-QdV"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="독어독문학과" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW6-aR-BYI">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="독어독문학과" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dW6-aR-BYI">
                                                                     <rect key="frame" x="0.0" y="44" width="114" height="18"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="rrl-k1-HrE"/>
@@ -1779,7 +1779,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="German Language &amp; Literature" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiR-uW-Ohc">
-                                                                    <rect key="frame" x="0.0" y="66" width="114" height="21"/>
+                                                                    <rect key="frame" x="0.0" y="66" width="114" height="21.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="22" id="Yvx-B6-5gj"/>
                                                                     </constraints>
@@ -1794,7 +1794,7 @@
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="150" id="71U-nm-HZe"/>
                                                         <constraint firstItem="7QI-Us-2Cm" firstAttribute="centerX" secondItem="PY4-8m-jsJ" secondAttribute="centerX" id="92R-Go-D5E"/>
@@ -1817,6 +1817,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="150" height="150"/>
                                         <connections>
+                                            <outlet property="containerView" destination="PY4-8m-jsJ" id="eqt-Ip-oMk"/>
                                             <outlet property="lblMajorEngName" destination="iiR-uW-Ohc" id="d1h-Bl-V16"/>
                                             <outlet property="lblMajorName" destination="dW6-aR-BYI" id="FWN-oU-LC7"/>
                                             <outlet property="majorImageView" destination="eVS-AY-4Uh" id="Y9T-OQ-qVC"/>
