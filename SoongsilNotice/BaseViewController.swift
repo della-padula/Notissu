@@ -18,11 +18,7 @@ class BaseViewController: UIViewController {
     static var noticeMajor   : Major?
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        if let vc = self.navigationController?.topViewController {
-            return vc.preferredStatusBarStyle
-        } else {
-            return .lightContent
-        }
+        return .lightContent
     }
     
     override func viewDidLoad() {
@@ -32,6 +28,7 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.barStyle = .black
+//        self.navigationController?.isNavigationBarHidden = falses
         self.checkUpdate()
     }
     
