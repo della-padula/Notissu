@@ -31,13 +31,46 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = MyNoticePresenter(view: self)
+        
+        self.setGradientNavigationBar()
+        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        self.navigationController?.navigationBar.isTranslucent = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.isNavigationBarHidden = true
-        
         setLayout()
+    }
+    
+    private func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
+        var gradientImage:UIImage?
+        UIGraphicsBeginImageContext(gradientLayer.frame.size)
+        if let context = UIGraphicsGetCurrentContext() {
+            gradientLayer.render(in: context)
+            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
+        }
+        UIGraphicsEndImageContext()
+        return gradientImage
+    }
+    
+    private func setGradientNavigationBar() {
+        print("navigationController : \(self.navigationController)")
+        print("navigationBar : \(self.navigationController?.navigationBar)")
+        print("navigationItem : \(self.navigationController?.navigationItem)")
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            let gradient = CAGradientLayer()
+            var bounds = navigationBar.bounds
+            bounds.size.height += UIApplication.shared.statusBarFrame.size.height
+            gradient.frame = bounds
+            gradient.colors = [UIColor(named: "notissuNaviGradientTop")!.cgColor, UIColor(named: "notissuNaviGradientBottom")!.cgColor]
+            gradient.startPoint = CGPoint(x: 0, y: 0)
+            gradient.endPoint = CGPoint(x: 0, y: 1)
+            
+            if let image = getImageFrom(gradientLayer: gradient) {
+                navigationBar.setBackgroundImage(image, for: UIBarMetrics.default)
+            }
+        }
     }
     
     private func setLayout() {

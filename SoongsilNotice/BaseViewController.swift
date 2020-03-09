@@ -23,13 +23,25 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barStyle = .black
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.barStyle = .black
-//        self.navigationController?.isNavigationBarHidden = falses
         self.checkUpdate()
+    }
+    
+    func setNavigationBarTextLayout() {
+        // Navigation Controller Navigation Bar Font & Size, Position Offset
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.AppleSDBold20P, NSAttributedString.Key.foregroundColor: UIColor.MONO0]
+        
+        self.navigationController?.navigationBar.setTitleVerticalPositionAdjustment(CGFloat(-7), for: UIBarMetrics.default)
+        
+        self.navigationController?.navigationItem.backBarButtonItem?.image = UIImage(named: "iconBack")!
+        
+        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        self.navigationController?.navigationBar.isTranslucent = false
     }
     
     func showAlert(title: String, msg: String, handler: ((UIAlertAction) -> Swift.Void)?) {

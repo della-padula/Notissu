@@ -34,6 +34,9 @@ class SchoolViewController: BaseViewController, SchoolView, UITableViewDelegate,
         NotificationCenter.default.addObserver(self, selector: #selector(onLoadFromWidget),
                                                name: NSNotification.Name("widget"),
                                                object: nil)
+        
+        setNavigationBarTextLayout()
+        setGradientNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,6 +73,37 @@ class SchoolViewController: BaseViewController, SchoolView, UITableViewDelegate,
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
         bannerView.delegate = self
+    }
+    
+    private func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {
+        var gradientImage:UIImage?
+        UIGraphicsBeginImageContext(gradientLayer.frame.size)
+        if let context = UIGraphicsGetCurrentContext() {
+            gradientLayer.render(in: context)
+            gradientImage = UIGraphicsGetImageFromCurrentImageContext()?.resizableImage(withCapInsets: UIEdgeInsets.zero, resizingMode: .stretch)
+        }
+        UIGraphicsEndImageContext()
+        return gradientImage
+    }
+    
+    private func setGradientNavigationBar() {
+        print("navigationController : \(self.navigationController)")
+        print("navigationBar : \(self.navigationController?.navigationBar)")
+        print("navigationItem : \(self.navigationController?.navigationItem)")
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            let gradient = CAGradientLayer()
+            var bounds = navigationBar.bounds
+            bounds.size.height += UIApplication.shared.statusBarFrame.size.height
+            gradient.frame = bounds
+            gradient.colors = [UIColor(named: "notissuNaviGradientTop")!.cgColor, UIColor(named: "notissuNaviGradientBottom")!.cgColor]
+            gradient.startPoint = CGPoint(x: 0, y: 0)
+            gradient.endPoint = CGPoint(x: 0, y: 1)
+            
+            if let image = getImageFrom(gradientLayer: gradient) {
+                navigationBar.setBackgroundImage(image, for: UIBarMetrics.default)
+            }
+        }
     }
     
     func addBannerViewToView(_ bannerView: GADBannerView) {

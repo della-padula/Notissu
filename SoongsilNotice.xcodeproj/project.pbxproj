@@ -69,6 +69,7 @@
 		DE5E82E22415DF5D00E7202B /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE5E82E02415DF5D00E7202B /* SFProText-Bold.ttf */; };
 		DE5E82E42415E09C00E7202B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82E32415E09C00E7202B /* UIView+Extension.swift */; };
 		DE5E82E52415E09D00E7202B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82E32415E09C00E7202B /* UIView+Extension.swift */; };
+		DE5E82E82415E77A00E7202B /* DeptSelectTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5E82E72415E77A00E7202B /* DeptSelectTitleCell.swift */; };
 		DE64BE8523DD253C00DF46C5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE64BE8423DD253C00DF46C5 /* NotificationCenter.framework */; };
 		DE64BE8823DD253C00DF46C5 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE64BE8723DD253C00DF46C5 /* TodayViewController.swift */; };
 		DE64BE8B23DD253C00DF46C5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE64BE8923DD253C00DF46C5 /* MainInterface.storyboard */; };
@@ -220,6 +221,7 @@
 		DE55424A2379340A004E01EB /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		DE5E82E02415DF5D00E7202B /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
 		DE5E82E32415E09C00E7202B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		DE5E82E72415E77A00E7202B /* DeptSelectTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeptSelectTitleCell.swift; sourceTree = "<group>"; };
 		DE64BE8323DD253C00DF46C5 /* Notissu Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notissu Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE64BE8423DD253C00DF46C5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		DE64BE8723DD253C00DF46C5 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 		DE0FB7732415DD1B0046FCA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE5E82E62415E75700E7202B /* DeptSelect */,
 				DE53D14923FC21BA00AEFCE2 /* Bookmark */,
 				DEF56D732383775D003CA0F0 /* Search */,
 				DE0F8F1B2373F333006A0B49 /* Home */,
@@ -485,6 +488,14 @@
 				DE5E82E02415DF5D00E7202B /* SFProText-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DE5E82E62415E75700E7202B /* DeptSelect */ = {
+			isa = PBXGroup;
+			children = (
+				DE5E82E72415E77A00E7202B /* DeptSelectTitleCell.swift */,
+			);
+			path = DeptSelect;
 			sourceTree = "<group>";
 		};
 		DE64BE8623DD253C00DF46C5 /* Notissu Today Extension */ = {
@@ -772,6 +783,7 @@
 				DEBFDC47237E3950003888D9 /* OpenSourceTableViewCell.swift in Sources */,
 				DE29614D2370FCB20074F24B /* NoticeListPresenter.swift in Sources */,
 				DE0FB7682415CD230046FCA2 /* ModifyDeptViewController.swift in Sources */,
+				DE5E82E82415E77A00E7202B /* DeptSelectTitleCell.swift in Sources */,
 				DE53D0B023F8E9B100AEFCE2 /* FavoriteNotice.xcdatamodeld in Sources */,
 				DE7496B123DC008C00000849 /* SearchPresenter.swift in Sources */,
 				DE0F8F1D2373F346006A0B49 /* HomeCell.swift in Sources */,
