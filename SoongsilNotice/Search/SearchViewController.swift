@@ -13,7 +13,7 @@ class SearchViewController: BaseViewController, SearchViewProtocol, UIPickerView
     @IBOutlet weak var majorText         : UILabel!
     @IBOutlet weak var lblSelectedMajor  : UILabel!
     @IBOutlet weak var pickerView        : UIPickerView!
-    @IBOutlet weak var searchBtn         : UIButton!
+    @IBOutlet weak var searchBtn         : RoundButton!
     @IBOutlet weak var majorSelectionBtn: UIButton!
     @IBOutlet weak var keywordTextField  : UITextField!
     
@@ -28,7 +28,7 @@ class SearchViewController: BaseViewController, SearchViewProtocol, UIPickerView
         
         self.keywordTextField.layer.borderWidth = 0.5
         self.keywordTextField.layer.borderColor = UIColor.SUB200.cgColor
-        
+        self.searchBtn.adjustsImageWhenHighlighted = false
         self.lblSelectedMajor.textColor = UIColor.MONO300
     }
     

@@ -676,22 +676,15 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-ob-1gX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCu-ob-1gX" customClass="RoundButton" customModule="Notissu" customModuleProvider="target">
                                 <rect key="frame" x="22" y="751" width="370" height="46"/>
                                 <color key="backgroundColor" name="notissuButton1000s"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="Dn4-Kc-LiB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
                                 <state key="normal" title="검색하기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipsToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onClickNext:" destination="5cQ-Xb-nyz" eventType="touchUpInside" id="OEs-nQ-4Wn"/>
                                     <action selector="searchAction:" destination="9PT-IW-mSw" eventType="touchUpInside" id="7hp-ZC-OZ9"/>
@@ -1372,6 +1365,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWi-Pr-b8l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1364" y="951"/>
+        </scene>
+        <!--Modify Dept View Controller-->
+        <scene sceneID="hZz-Bw-2oW">
+            <objects>
+                <viewController storyboardIdentifier="modifyDeptVC" id="uMA-0d-pdC" customClass="ModifyDeptViewController" customModule="Notissu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pTu-N2-Tel">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bjA-tX-clv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qV-3h-TkM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="951"/>
         </scene>
     </scenes>
     <resources>

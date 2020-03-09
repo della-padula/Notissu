@@ -190,6 +190,10 @@ class NoticeListViewController: BaseViewController, NoticeListView, UITableViewD
         
         self.setupBannerView()
         
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.AppleSDBold20P, NSAttributedString.Key.foregroundColor: UIColor.MONO0]
+        
+        self.navigationController?.navigationBar.setTitleVerticalPositionAdjustment(CGFloat(-7), for: UIBarMetrics.default)
+        
         if self.isUpdateAvailable() {
             print("New Version Update")
             self.showAlertOKWithHandler(title: "업데이트가 필요합니다.", msg: "원활한 서비스 이용을 위해 업데이트가 필요합니다. '확인'을 누르면 스토어로 이동합니다.", handler: onClickUpdateApp(_:))
