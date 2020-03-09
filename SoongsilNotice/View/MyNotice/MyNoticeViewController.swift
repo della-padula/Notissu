@@ -31,7 +31,7 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
         let selectHomeDeptViewController = storyBoard.instantiateViewController(withIdentifier: "selectHomeDeptVC")
         
         let transition = CATransition()
-        transition.duration = 0.3
+        transition.duration = 0.2
         transition.type = CATransitionType.push
         transition.subtype = CATransitionSubtype.fromRight
        
@@ -55,6 +55,7 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         setLayout()
     }
     
