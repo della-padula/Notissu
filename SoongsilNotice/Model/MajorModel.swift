@@ -8,7 +8,13 @@
 
 import Foundation
 
-struct MajorModel {
+public struct Major {
+    var majorCode: DeptCode?
+    var majorName: DeptName?
+    var majorNameEng: DeptNameEng?
+}
+
+public struct MajorModel {
     // 학교 부대 시설
     static var majorCodeListSoongsil    = [DeptCode.Dormitory]
     static var majorNameListSoongsil    = [DeptName.Dormitory]

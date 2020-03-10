@@ -8,25 +8,24 @@
 
 import UIKit
 import Lottie
-import WatchConnectivity
 
-class BaseViewController: UIViewController {
+public class BaseViewController: UIViewController {
     let animationView = AnimationView(name: "notissu_anim")
     
     static var noticeDeptCode: DeptCode?
     static var noticeDeptName: DeptName?
     static var noticeMajor   : Major?
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    override public var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.barStyle = .black
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.barStyle = .black
         self.checkUpdate()

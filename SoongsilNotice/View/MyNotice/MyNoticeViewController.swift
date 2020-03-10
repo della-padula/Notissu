@@ -29,17 +29,19 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
     @IBAction func onClickSelectDept(_ sender: Any) {
         let storyBoard = self.storyboard!
         let selectHomeDeptViewController = storyBoard.instantiateViewController(withIdentifier: "selectHomeDeptVC")
-        
-        let transition = CATransition()
-        transition.duration = 0.2
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromRight
-       
-        view.window!.layer.add(transition, forKey: kCATransition)
-        
-        selectHomeDeptViewController.modalPresentationStyle = .fullScreen
-        
-        self.present(selectHomeDeptViewController, animated: false, completion: nil)
+//
+//        let transition = CATransition()
+//        transition.duration = 0.2
+//        transition.type = CATransitionType.push
+//        transition.subtype = CATransitionSubtype.fromRight
+//
+//        view.window!.layer.add(transition, forKey: kCATransition)
+//
+//        selectHomeDeptViewController.modalPresentationStyle = .fullScreen
+//
+//        
+        self.navigationController?.pushViewController(selectHomeDeptViewController, animated: true)
+//        self.present(selectHomeDeptViewController, animated: false, completion: nil)
     }
     
     private var presenter: MyNoticePresenterProtocol!
@@ -57,6 +59,12 @@ class MyNoticeViewController: BaseViewController, MyNoticeViewProtocol {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         setLayout()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     private func getImageFrom(gradientLayer:CAGradientLayer) -> UIImage? {

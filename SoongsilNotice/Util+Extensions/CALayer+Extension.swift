@@ -31,8 +31,16 @@ extension CALayer {
             break
         }
         border.backgroundColor = color.cgColor;
-        
         self.addSublayer(border)
+    }
+    
+    func removeAllBorders() {
+        if let layers = self.sublayers {
+            for (index, layer) in layers.enumerated() {
+                print("index : \(index), layer type : \(layer)")
+                layer.removeFromSuperlayer()
+            }
+        }
     }
     
 }

@@ -10,6 +10,12 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    open class var T_MAJOR_BG: UIColor {
+        get {
+            return UIColor(hex: "#FAFAFA", alpha: 1.0)
+        }
+    }
+    
     open class var MONO0: UIColor {
         get {
             return UIColor(hex: "#FFFFFF", alpha: 1.0)

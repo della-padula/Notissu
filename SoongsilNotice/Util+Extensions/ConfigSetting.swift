@@ -77,20 +77,20 @@ public enum DeptCode: Int, CaseIterable {
 public enum DeptName: String, CaseIterable {
     // IT
     case IT_Computer = "컴퓨터학부"
-    case IT_Media = "글로벌미디어학부"
-    case IT_Electric = "전자정보공학부"
-    case IT_Software = "소프트웨어학부"
-    case IT_SmartSystem = "스마트시스템소프트웨어학과"
+    case IT_Media = "글로벌미디어 학부"
+    case IT_Electric = "전자정보 공학부"
+    case IT_Software = "소프트웨어 학부"
+    case IT_SmartSystem = "스마트시스템 소프트웨어학과"
     // LAW
     case LAW_Law = "법학과"
     case LAW_IntlLaw = "국제법무학과"
 
     // Engineering
     case Engineering_Chemistry = "화학공학과"
-    case Engineering_Organic = "유기신소재ㆍ파이버공학과"
+    case Engineering_Organic = "유기신소재 파이버공학과"
     case Engineering_Electonic = "전기공학과"
     case Engineering_Machine = "기계공학부"
-    case Engineering_Industrial = "산업정보시스템공학과"
+    case Engineering_Industrial = "산업정보 시스템공학과"
     case Engineering_Architect = "건축학부"
     
     // 인문대학
@@ -109,18 +109,18 @@ public enum DeptName: String, CaseIterable {
     case NaturalScience_Math = "수학과" // 수학과
     case NaturalScience_Chemistry = "화학과" // 화학과
     case NaturalScience_Physics = "물리학과" // 물리학과
-    case NaturalScience_Actuarial = "정보통계보험수리학과" // 정보통계 보험수리학과
-    case NaturalScience_Medical = "의생명시스템학부" // 의생명시스템학부
+    case NaturalScience_Actuarial = "정보통계 보험수리학과" // 정보통계 보험수리학과
+    case NaturalScience_Medical = "의생명 시스템학부" // 의생명시스템학부
     
     // 경영대학
     case Business_biz = "경영학부" // 경영학부
-    case Business_venture = "벤처중소기업학과" // 벤처중소기업학과
+    case Business_venture = "벤처중소 기업학과" // 벤처중소기업학과
     case Business_Account = "회계학과" // 회계학과
     case Business_Finance = "금융학부" // 금융학부
     
     // 경제통상대학
     case Economy_Economics = "경제학과" // 경제학과
-    case Economy_GlobalCommerce = "글로벌통상학과" // 글로벌통상학과
+    case Economy_GlobalCommerce = "글로벌 통상학과" // 글로벌통상학과
     
     // 사회과학대학
     case Social_Welfare = "사회복지학부" // 사회복지학부
@@ -131,11 +131,11 @@ public enum DeptName: String, CaseIterable {
     case Social_Political = "정치외교학과" // 정치외교학과
     
     // 융합
-    case MIX_mix = "융합특성화자유전공학부"
+    case MIX_mix = "융합특성화 자유전공학부"
     
     case Soongsil = "숭실대학교 공지"
     
-    case Dormitory = "레지던스홀(기숙사)"
+    case Dormitory = "레지던스홀 (기숙사)"
 }
 
 public enum DeptNameEng: String {

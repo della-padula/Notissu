@@ -26,7 +26,6 @@
 		DE0FB76B2415CF0C0046FCA2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB76A2415CF0C0046FCA2 /* UIFont+Extension.swift */; };
 		DE0FB76C2415CF0C0046FCA2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB76A2415CF0C0046FCA2 /* UIFont+Extension.swift */; };
 		DE0FB76E2415D2E30046FCA2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB76D2415D2E30046FCA2 /* RoundButton.swift */; };
-		DE0FB76F2415D2E30046FCA2 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB76D2415D2E30046FCA2 /* RoundButton.swift */; };
 		DE0FB7712415DCEC0046FCA2 /* MyNoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB7702415DCEC0046FCA2 /* MyNoticeViewController.swift */; };
 		DE0FB7752415DD540046FCA2 /* MyNoticeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB7742415DD540046FCA2 /* MyNoticeContract.swift */; };
 		DE0FB7772415DD730046FCA2 /* MyNoticePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FB7762415DD730046FCA2 /* MyNoticePresenter.swift */; };
@@ -118,6 +117,7 @@
 		DEC1684B23F7A3B900DE2D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE29613E23703F4D0074F24B /* Assets.xcassets */; };
 		DEC1684C23F7A84500DE2D84 /* NotissuProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC1684923F7A1FF00DE2D84 /* NotissuProperty.swift */; };
 		DEC812E82416820200CCE09B /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC812E72416820200CCE09B /* CALayer+Extension.swift */; };
+		DEC812EF24171FB900CCE09B /* MajorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B67AEA2400BB060027D038 /* MajorModel.swift */; };
 		DEF56D7523837778003CA0F0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF56D7423837778003CA0F0 /* SearchViewController.swift */; };
 		DEF56D782383BF05003CA0F0 /* SchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF56D772383BF05003CA0F0 /* SchoolViewController.swift */; };
 		DEF56D7A2383BF81003CA0F0 /* SchoolPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF56D792383BF81003CA0F0 /* SchoolPresenter.swift */; };
@@ -373,6 +373,9 @@
 		DE0FB7732415DD1B0046FCA2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEC812ED24171E6700CCE09B /* Base */,
+				DEC812EC24171E5F00CCE09B /* Custom */,
+				DEC812EA24171DF600CCE09B /* Storyboards */,
 				DE5E82E62415E75700E7202B /* DeptSelect */,
 				DE53D14923FC21BA00AEFCE2 /* Bookmark */,
 				DEF56D732383775D003CA0F0 /* Search */,
@@ -409,7 +412,8 @@
 		DE29613423703F4C0074F24B /* SoongsilNotice */ = {
 			isa = PBXGroup;
 			children = (
-				DE5E82DF2415DF5D00E7202B /* Fonts */,
+				DEC812EB24171E4100CCE09B /* Model */,
+				DEC812E924171DD300CCE09B /* Util+Extensions */,
 				DE0FB7732415DD1B0046FCA2 /* View */,
 				DE0418B02402412E00486BF3 /* GoogleService-Info.plist */,
 				DE85B93B23DD2DEB001FB35C /* Notissu.entitlements */,
@@ -417,23 +421,7 @@
 				DE03E9D02379B063002AA5AE /* NoticeParser */,
 				DE501C4A23750DCA0053055A /* notissu_anim.json */,
 				DE29613523703F4C0074F24B /* AppDelegate.swift */,
-				DE29613B23703F4C0074F24B /* Main.storyboard */,
 				DE29614323703F4D0074F24B /* Info.plist */,
-				DE296154237195CD0074F24B /* ConfigSetting.swift */,
-				DE0F8F192373A222006A0B49 /* BaseViewController.swift */,
-				DE501C482374FD250053055A /* NoticeURL.swift */,
-				DE5542432377E076004E01EB /* HomeSwticher.swift */,
-				DE72017E237A871B00F60CEB /* Launch Screen.storyboard */,
-				DE53D0B223F8EA4E00AEFCE2 /* CoreDataUtil.swift */,
-				B0B67AEA2400BB060027D038 /* MajorModel.swift */,
-				DE7E5DB024093555007F0DF2 /* String+FileType.swift */,
-				DE1772D2240F64F400A58A66 /* Encode+EUC-KR.swift */,
-				DE0FB7632415C7C90046FCA2 /* UIColor+Extension.swift */,
-				DE0FB76A2415CF0C0046FCA2 /* UIFont+Extension.swift */,
-				DE0FB76D2415D2E30046FCA2 /* RoundButton.swift */,
-				DE5E82E32415E09C00E7202B /* UIView+Extension.swift */,
-				DE5E82F0241610BF00E7202B /* CATransition+Extension.swift */,
-				DEC812E72416820200CCE09B /* CALayer+Extension.swift */,
 			);
 			path = SoongsilNotice;
 			sourceTree = "<group>";
@@ -532,6 +520,57 @@
 			path = "Notissu Today Extension";
 			sourceTree = "<group>";
 		};
+		DEC812E924171DD300CCE09B /* Util+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE296154237195CD0074F24B /* ConfigSetting.swift */,
+				DE501C482374FD250053055A /* NoticeURL.swift */,
+				DE53D0B223F8EA4E00AEFCE2 /* CoreDataUtil.swift */,
+				DE7E5DB024093555007F0DF2 /* String+FileType.swift */,
+				DE1772D2240F64F400A58A66 /* Encode+EUC-KR.swift */,
+				DE0FB7632415C7C90046FCA2 /* UIColor+Extension.swift */,
+				DE0FB76A2415CF0C0046FCA2 /* UIFont+Extension.swift */,
+				DE5E82E32415E09C00E7202B /* UIView+Extension.swift */,
+				DE5E82F0241610BF00E7202B /* CATransition+Extension.swift */,
+				DEC812E72416820200CCE09B /* CALayer+Extension.swift */,
+			);
+			path = "Util+Extensions";
+			sourceTree = "<group>";
+		};
+		DEC812EA24171DF600CCE09B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DE29613B23703F4C0074F24B /* Main.storyboard */,
+				DE72017E237A871B00F60CEB /* Launch Screen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DEC812EB24171E4100CCE09B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0B67AEA2400BB060027D038 /* MajorModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEC812EC24171E5F00CCE09B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DE0FB76D2415D2E30046FCA2 /* RoundButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		DEC812ED24171E6700CCE09B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE0F8F192373A222006A0B49 /* BaseViewController.swift */,
+				DE5542432377E076004E01EB /* HomeSwticher.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		DEF56D732383775D003CA0F0 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +595,7 @@
 		DEF56D812384DA05003CA0F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE5E82DF2415DF5D00E7202B /* Fonts */,
 				DE7E5DB224093779007F0DF2 /* FileTypeIcon.xcassets */,
 				DE29613E23703F4D0074F24B /* Assets.xcassets */,
 				DE53D1552400F54B00AEFCE2 /* NotissuColorSet.xcassets */,
@@ -834,10 +874,10 @@
 				DE85B93523DD29CE001FB35C /* NoticeSocial.swift in Sources */,
 				DE85B93123DD29CE001FB35C /* NoticeInmun.swift in Sources */,
 				DE85B93023DD29CE001FB35C /* NoticeLaw.swift in Sources */,
+				DEC812EF24171FB900CCE09B /* MajorModel.swift in Sources */,
 				DE85B93D23DD3001001FB35C /* TodayPresenter.swift in Sources */,
 				DE85B93A23DD2AF2001FB35C /* Notice.swift in Sources */,
 				DE85B93823DD29E0001FB35C /* NoticeURL.swift in Sources */,
-				DE0FB76F2415D2E30046FCA2 /* RoundButton.swift in Sources */,
 				DEC1684A23F7A1FF00DE2D84 /* NotissuProperty.swift in Sources */,
 				DE85B93423DD29CE001FB35C /* NoticeEconomy.swift in Sources */,
 				DE85B93223DD29CE001FB35C /* NoticeNaturalScience.swift in Sources */,

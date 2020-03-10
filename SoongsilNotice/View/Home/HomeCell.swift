@@ -8,12 +8,6 @@
 
 import UIKit
 
-struct Major {
-    var majorCode: DeptCode?
-    var majorName: DeptName?
-    var majorNameEng: DeptNameEng?
-}
-
 class HomeCell: UITableViewCell {
     @IBOutlet weak var majorTitle: UILabel!
     @IBOutlet weak var majorTitleEng: UILabel!
@@ -25,7 +19,8 @@ class HomeCell: UITableViewCell {
     
     var major: Major = Major() {
         didSet {
-            self.majorTitle.text = major.majorName.map { $0.rawValue }
+            let majorNameText = major.majorName.map { $0.rawValue }
+            self.majorTitle.text = majorNameText?.replacingOccurrences(of: " ", with: "")
             self.majorTitleEng.text = major.majorNameEng.map { $0.rawValue }
             
             majorCode = major.majorCode
