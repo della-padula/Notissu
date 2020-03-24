@@ -147,7 +147,9 @@ class NoticeListViewController: BaseViewController, NoticeListView, UITableViewD
             var bounds = navigationBar.bounds
             bounds.size.height += UIApplication.shared.statusBarFrame.size.height
             gradient.frame = bounds
-            gradient.colors = [UIColor(named: "notissuNaviGradientTop")!.cgColor, UIColor(named: "notissuNaviGradientBottom")!.cgColor]
+            gradient.colors = [UIColor(hex: "#02D6F0", alpha: 1.0).cgColor,
+                               UIColor(hex: "#02C3E7", alpha: 1.0).cgColor,
+                               UIColor(hex: "#01ADDD", alpha: 1.0).cgColor]
             gradient.startPoint = CGPoint(x: 0, y: 0)
             gradient.endPoint = CGPoint(x: 0, y: 1)
             

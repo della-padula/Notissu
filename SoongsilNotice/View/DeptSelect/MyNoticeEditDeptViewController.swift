@@ -100,6 +100,7 @@ class MyNoticeEditDeptViewController: BaseViewController {
         
         print("BgViews[0] Width : \(bgViews[0].frame.width)")
         print("currentBadgeWidth : \(currentBadgeWidth.constant)")
+        print("currentMajorContainerWidth : \(currentMajorContainer.frame.width)")
         
         if selectedIndex == 0 {
             majorList = MajorModel.majorListIT

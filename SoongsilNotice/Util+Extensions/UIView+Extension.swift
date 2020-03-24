@@ -24,9 +24,9 @@ extension UIView {
         layer.mask = mask
     }
     
-    func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+    func setGradientBackground(colors: [CGColor]) {
         let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
+        gradientLayer.colors = colors
         gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)
         gradientLayer.locations = [0, 1]

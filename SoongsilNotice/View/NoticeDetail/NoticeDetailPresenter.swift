@@ -14,8 +14,8 @@ import JavaScriptCore
 class NoticeDetailPresenter: NoticeDetail {
     private var view: NoticeDetailView?
     
-    let htmlStart = "<hml><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"><style>html,body{padding:0 5px 5px;margin:0;font-size:18px !important;}iframe,img{max-width:100%;height:auto;}</style></head><bpdy>"
-    let htmlEnd = "</bpdy></hml>"
+    let htmlStart = "<html><head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, shrink-to-fit=no\"><style>html,body{padding:0 5px 5px;margin:0;font-size:18px !important;}iframe,img{max-width:100%;height:auto;}</style></head><body>"
+    let htmlEnd = "</body></html>"
     
     init(view: NoticeDetailView) {
         self.view = view
